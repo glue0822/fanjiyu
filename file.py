@@ -1,3 +1,5 @@
+#github地址:https://www.github.com/glue0822/no_config
+#开源项目,欢迎参加!
 import os
 print('反极域系统启动中...\n启动完成。\n@CopyRight 235工作室版权所有')
 while True:
