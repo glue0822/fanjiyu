@@ -1,5 +1,4 @@
 import os
-import sys
 print('反极域系统启动中...\n启动完成。\n@CopyRight 235工作室版权所有')
 while True:
     print('1:解除老师控制\n2:退出')
@@ -10,4 +9,4 @@ while True:
             print('操作成功!')
         print('可能需要再次输入1')
     elif do_code == '2':
-        sys.exit()
+        exit()
