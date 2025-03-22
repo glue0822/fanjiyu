@@ -1,6 +1,5 @@
 import os
 import sys
-from time import sleep
 print('反极域系统启动中...\n启动完成。\n@CopyRight 235工作室版权所有')
 while True:
     print('1:解除老师控制\n2:退出')
