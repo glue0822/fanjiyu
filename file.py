@@ -9,4 +9,4 @@ while True:
             print('操作成功!')
         print('可能需要再次输入1')
     elif do_code == '2':
-        exit()
+        break
