@@ -1,0 +1,1 @@
+It's Made of Python,Not HTML,the'HTML 82.2% and TeX 17.4%'is just because I use pyinstaller.
