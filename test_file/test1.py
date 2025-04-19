@@ -44,8 +44,3 @@ while True:
             sys.exit()
         elif event.type == pygame.MOUSEBUTTONDOWN:
             move_b()
-        screen.fill('white')
-        screen.blit(image_A, A)
-        screen.blit(image_B, B)
-        pygame.display.update()
-        sleep(0.01)
