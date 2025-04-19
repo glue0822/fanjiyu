@@ -12,5 +12,5 @@ while True:
                 os.system('taskkill /f /im '+str(i))
     elif do_code == '2':
         os .system('ipconfig /flushdns')
-    elif do_code == 3:
+    elif do_code == '3':
         sys.exit()
