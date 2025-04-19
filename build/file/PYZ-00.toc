@@ -1,4 +1,4 @@
-('D:\\Program Files\\gitlab\\no_config\\build\\file\\PYZ-00.pyz',
+('D:\\Program Files\\gitlab\\fanjiyu\\build\\file\\PYZ-00.pyz',
  [('__future__',
    'C:\\Users\\长腿大老虎\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\__future__.py',
    'PYMODULE'),
