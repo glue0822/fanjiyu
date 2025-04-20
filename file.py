@@ -17,7 +17,7 @@ def control(do_code):
     elif do_code == '2':
         os .system('ipconfig /flushdns')
     elif do_code == '3':
-        sys.exit()
+        window.destroy()
     return 0
 button1=Button(window,width=20,text='1',command=lambda:control('1'))
 button2=Button(window,width=20,text='2',command=lambda:control('2'))
