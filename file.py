@@ -1,9 +1,10 @@
 from tkinter import *
-import os,sys
+import os,sys,time
 process_name=['RCServer.exe','RCClient.exe','RCMonitor.exe','RCUpdate.exe','RCData.exe','RCAudio.exe','StudentMain.exe']
 
 window=Tk()
 screen=Canvas(window,width=150,height=100)
+window.attributes('-topmost',1)
 screen.pack()
 screen.create_text(75,50,text='反极域系统\n1:解除老师控制\n2:刷新DNS缓存\n3:退出\n请点击控制键:')
 window.title('file.exe')
@@ -24,4 +25,11 @@ button3=Button(window,width=20,text='3',command=lambda:control('3'))
 button1.pack()
 button2.pack()
 button3.pack()
-window.mainloop()
+#window.mainloop()
+while True:
+    try:
+        window.attributes('-topmost',1)
+        time.sleep(0.01)
+        window.update()
+    except TclError:
+        sys.exit()
