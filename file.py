@@ -1,6 +1,8 @@
 from tkinter import *
 import os,sys,time,hashlib
 from datetime import datetime
+#导入模块
+
 process_name=['RCServer.exe','RCClient.exe','RCMonitor.exe','RCUpdate.exe','RCData.exe','RCAudio.exe','StudentMain.exe']
 try:
     Verify_file=open('Verify.txt','r')
@@ -18,11 +20,15 @@ if time_hash != Verify_code:
     print('效验码已过期,请前往您购买的渠道更换效验码.')
     input('请按Enter键退出...')
     sys.exit()
+#效验码
+
 window=Tk()
 screen=Canvas(window,width=150,height=100)
 window.attributes('-topmost',1)
 screen.pack()
 window.title('file.exe显示:')
+#配置窗口
+
 screen.create_text(75,50,text='反极域系统\n请点击控制键:')
 def control(do_code):
     if do_code == '1':
@@ -40,7 +46,8 @@ button3=Button(window,width=20,text='关闭此页面',command=lambda:control('3'
 button1.pack()
 button2.pack()
 button3.pack()
-#window.mainloop()
+#功能按键
+
 while True:
     try:
         window.attributes('-topmost',1)
@@ -48,3 +55,4 @@ while True:
         window.update()
     except TclError:
         sys.exit()
+#主循环
