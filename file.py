@@ -1,7 +1,23 @@
 from tkinter import *
-import os,sys,time
+import os,sys,time,hashlib
+from datetime import datetime
 process_name=['RCServer.exe','RCClient.exe','RCMonitor.exe','RCUpdate.exe','RCData.exe','RCAudio.exe','StudentMain.exe']
-
+try:
+    Verify_file=open('Verify.txt','r')
+except FileNotFoundError:
+    print('Verify.txt丢失,无法运行.')
+    input('请按Enter键退出...')
+    sys.exit()
+Verify_code=Verify_file.read()
+Verify_file.close()
+year_now=datetime.now().year
+month_now=datetime.now().month
+time_now='Verify_code:'+str(year_now)+'.'+str(month_now)
+time_hash=hashlib.sha256(time_now.encode('utf-8')).hexdigest()
+if time_hash != Verify_code:
+    print('效验码已过期,请前往您购买的渠道更换效验码.')
+    input('请按Enter键退出...')
+    sys.exit()
 window=Tk()
 screen=Canvas(window,width=150,height=100)
 window.attributes('-topmost',1)
